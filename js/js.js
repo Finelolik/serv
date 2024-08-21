@@ -51,7 +51,7 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
 
 	const formData = new FormData(this)
 
-	fetch('../js/submit.php', {
+	fetch('js/submit.php', {
 		method: 'POST',
 		body: formData,
 	})
