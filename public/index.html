@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Главная</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<form id="myForm">
+						<input
+							class="custominput"
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Как к вам обращаться?"
+							required
+						/><br /><br />
+
+						<input
+							class="custominput"
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="+7 (999) 999-99-99"
+							required
+						/><br /><br />
+
+						<textarea
+							class="custominput"
+							placeholder="Кратко опишите вашу проблему"
+							id="text"
+							name="text"
+							required
+						></textarea
+						><br /><br />
+
+						<button type="submit" class="submit">ОТПРАВИТЬ</button>
+					</form>
+				</div>
+			</div>
+			<div class="header">
+				<div class="header-line" id="#">
+					<div class="nav">
+						<div class="left">
+							<a href="#"
+								><img class="image" src="images/law.png" alt="logo"
+							/></a>
+						</div>
+						<div class="center">
+							<a class="text" href="#">контакты</a>
+							<a class="text" href="#">о нас</a>
+						</div>
+						<div class="right">
+							<a id="zayav" href="#">&#8250; оставить заявку</a>
+						</div>
+					</div>
+				</div>
+				<div class="main">
+					<h1 class="title tleft">Ваша защита</h1>
+					<h1 class="title tright">— наш приоритет</h1>
+				</div>
+				<div class="statbut" id="statbut">
+					<a href="#statistic"
+						><img id="scroll" src="images/anon-3817512.png" alt="da"
+					/></a>
+				</div>
+				<div class="statbut hidden" id="scrollup">
+					<a href="#"
+						><img id="scrollup" src="images/scrollup.png" alt="da"
+					/></a>
+				</div>
+			</div>
+			<div class="statistic" id="statistic">
+				<div class="dela">
+					<p class="delat">500</p>
+					<p class="delatb">ДЕЛ ПРОРАБОТАНО</p>
+				</div>
+				<div class="dela">
+					<p class="delat">600</p>
+					<p class="delatb">ПРЕКРАЩЕНО НА СТАДИИ СЛЕДСТВИЯ</p>
+				</div>
+				<div class="dela">
+					<p class="delat">200</p>
+					<p class="delatb">ПРЕКРАЩЕНО НА СТАДИИ СУДЕБНОГО РАЗБИРАТЕЛЬСТВА</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/js.js"></script>
+</html>
