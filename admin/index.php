@@ -1,4 +1,6 @@
-<?php include('../auth/auth.php'); ?>
+<?php include('../auth/auth.php'); 
+$username = $_SESSION['username']; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -25,7 +27,7 @@
 						/></a>
 					</div>
 					<div class="quitadm">
-						<span class="login">login: $login</span>
+						<span class="login"><?= $username ?></span>
 						<a href="../auth/logout.php"><div class="quit">Выйти</div></a>
 					</div>
 				</div>

@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Простой пример проверки (замените на проверку из базы данных)
     if ($username == 'admin' && $password == 'password') {
+        $_SESSION['username'] = $username; // Сохранение имени пользователя в сессии
         $_SESSION['loggedin'] = true;
         header('Location: ../admin'); // Перенаправление на защищенную страницу
         exit;
